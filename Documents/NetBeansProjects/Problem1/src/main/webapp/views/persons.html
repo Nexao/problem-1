@@ -1,0 +1,50 @@
+<div style="margin: 10px;">
+    <!--<h2 style="color:darkblue;"> {{ persons }}</h2>-->
+    <h3>All the people in the world</h3>
+    {{ test }}
+    <ul style="list-style-type: none">
+        
+        
+        <li ng-repeat="person in persons">
+            <div>{{ person.name }} <a href="#/info/{{$index}}">details</a></div>
+        </li>
+<!--            <table class="table" >
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Details</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ person.name}} </td>
+                        <td><a href="#/info/{{$index}}">{{ person.id }}</a></td>
+                    </tr>
+                </tbody>
+            </table>-->
+            
+        
+        
+    </ul>
+</div>
+
+
+
+<!--
+
+<table class="table" style="margin: 5px;border: solid #006666; min-width: 400px;min-height: 300px;">
+                <div ng-view="ng-view"></div>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Details</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="person in allPersons">
+                        <td>{{ person.name}}</td>
+                        <td>{{ person.id}}</td>
+                    </tr>
+                </tbody>
+            </table>-->

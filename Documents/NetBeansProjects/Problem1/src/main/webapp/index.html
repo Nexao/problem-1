@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5//angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5//angular-route.js"></script>
+        <script src="js/dom.js" type="text/javascript"></script>
+    </head>
+    <body ng-app="viewApp">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#/people">All Persons</a></li>
+                <li><a href="#/person">New Person</a></li>
+            </ul>
+            <h2>Person List</h2>
+            <div class="table" style="margin: 5px;border: solid #006666; min-width: 400px;min-height: 300px;">
+                <div ng-view="ng-view"></div>
+                
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
